@@ -12,7 +12,7 @@ The following kit contains the following functionalities:
     <ol>
     <li> [getToken](https://dev.cashfree.com/api-reference/payouts-api#authorise): to get the auth token to be used in all following calls.
     <li> [createCashgram](https://dev.cashfree.com/api-reference/payouts-api#create-cashgram-request): to create a cashgram.
-    <li> [cashgramGetStatus](https://dev.cashfree.com/api-reference/payouts-api#create-cashgram-request): get the status of the created cashgram.
+    <li> [cashgramGetStatus](https://dev.cashfree.com/api-reference/payouts-api#get-cashgram-status): get the status of the created cashgram.
     </ol>
 
 ## Build Steps
@@ -37,7 +37,7 @@ Your IP has to be whitelisted to hit Cashfree's server. For more information ple
 The following kit needs Cashgram details to create a cashgram. To know more information on how to create cashgrams please go [here](https://dev.cashfree.com/api-reference/payouts-api#create-cashgram-request).
 
 The kit picks up the cashgram details from the config file cashgramDetails object.
-Required Fields are:
+Required fields are:
   1. cashgramId: unique Id of the created cashgram.
   2. amount: amount to be transferred.
   3. name: name of the contact.
